@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Shariqul Haque - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Home Section */
+        #home {
+            background: rgb(241, 241, 241);
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            border: 3px solid #007bff;
+        }
+
+        /* About Section */
+        #about {
+            background: #fff;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Skills Section */
+        #skills {
+            background: rgb(241, 241, 241);
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .skill-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #fff;
+            
+        }
+
+        .contact-form {
+            max-width: 600px;
+            width: 100%;
+            margin-right: 260px;
+            /* font-size: 1.1rem; */
+        }
+
+        .contact-form a {
+            text-decoration: none !important;
+            /* text-decoration-color: black !important; */
+            color: black;
+            /* margin-top: 10px; */
+        }
+
+        .contact-form i {
+            color: #0077B5;
+            font-size: 21px;
+            margin-top: 5px;
+        }
+
+        .contact-form h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        /* input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        } */
+
+        button {
+            background: #007bff;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 10vh;
+            }
+
+            .nav-links li {
+                margin: 10px;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .contact-form {
+            max-width: 300px;
+            width: 100%;
+            margin-right: 25px;
+            /* font-size: 1.1rem; */
+        }
+
+        .contact-form h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="list-1"><a href="#home">Home</a></li>
+            <li class="list-2"><a href="#about">About</a></li>
+            <li class="list-3"><a href="#skills">Skills</a></li>
+            <li class="list-4"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <img src="photo6.jpg" alt="Your Name" class="profile-img">
+        <h1>Md Shariqul Haque</h1>
+        <p>Web Developer | Designer | Frontend Developer | DEO</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hi, I'm Md Shariqul Haque, a dedicated and driven individual passionate about continuous learning and growth. Recently, I completed courses in Web Developement and Data Analytics, which have equipped me with valuable skills in developement thinking and data-driven decision-making. In addition to my academic pursuits, I have a strong interest in programming and enjoy creating programs that provides valuable outputs. Throughout my journey, I've successfully led several team projects, focusing on effective communication and collaboration. I'm always excited about new challenges and eager to apply my knowledge to make an impact in the digital world.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <h3>Computer Languages</h3>
+                <p>Java, C++, C</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p>Git, VS Code, Excel, chatGPT</p>
+            </div>
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <p>English, Hindi, Urdu</p>
+            </div>
+            <div class="skill-card">
+                <h3>Personalities</h3>
+                <p>Communication, Team work, Responsible</p>
+            </div>
+            <div class="skill-card">
+                <h3>Other skills</h3>
+                <p>Data entry, Designing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <!-- <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form> -->
+
+            
+            
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+918226912421">+918226912421</a><br>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:mdshariqulhaque6@gmail.com">mdshariqulhaque6@gmail.com</a><br>
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+            <a href="https://www.linkedin.com/in/md-sharique-173941265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Visit my LinkedIn</a>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will respond soon.');
+            this.reset();
+        });
+
+        // Navigation active state on scroll
+        window.addEventListener('scroll', function() {
+            let sections = document.querySelectorAll('section');
+            let navLinks = document.querySelectorAll('.nav-links a');
+            
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if(top >= offset && top < offset + height) {
+                    navLinks.forEach(links => {
+                        links.classList.remove('active');
+                        document.querySelector('.nav-links a[href*=' + id + ']').classList.add('active');
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
