@@ -1,2 +1,2 @@
 # portfolio
-description about me
+My Portfolio using basic html css js.
