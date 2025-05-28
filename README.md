@@ -1,2 +1,2 @@
 # portfolio
-My Portfolio using basic html css js.
+Personal portfolio made by using basic html css and js.
