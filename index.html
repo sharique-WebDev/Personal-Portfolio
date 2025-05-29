@@ -1,303 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md Shariqul Haque - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
-        }
-
-        /* Navigation */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: #fff;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
-
-        .nav-links li {
-            margin: 0 1.5rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #007bff;
-        }
-
-        /* Sections */
-        section {
-            padding: 5rem 2rem;
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Home Section */
-        #home {
-            background: rgb(241, 241, 241);
-            text-align: center;
-            flex-direction: column;
-        }
-
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin-bottom: 1.5rem;
-            border: 3px solid #007bff;
-            filter: brightness(100%) contrast(110%);
-        }
-
-        /* About Section */
-        #about {
-            background: #fff;
-        }
-
-        .about-content {
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
-        /* Skills Section */
-        #skills {
-            background: rgb(241, 241, 241);
-        }
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            width: 100%;
-            max-width: 850px;
-        }
-
-        .skill-card {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        /* Contact Section */
-        #contact {
-            background: #fff;
-            
-        }
-
-        .contact-form {
-            max-width: 650px;
-            width: 100%;
-            margin-right: 260px;
-            /* font-size: 1.1rem; */
-        }
-
-        .contact-form a {
-            text-decoration: none !important;
-            /* text-decoration-color: black !important; */
-            color: black;
-            /* margin-top: 10px; */
-        }
-
-        .contact-form i {
-            color: #0077B5;
-            font-size: 22px;
-            margin-top: 5px;
-        }
-
-        .contact-form h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        /* input, textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        } */
-
-        button {
-            background: #007bff;
-            color: #fff;
-            padding: 0.8rem 2rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        button:hover {
-            background: #0056b3;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .navbar {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 10vh;
-            }
-
-            .nav-links li {
-                margin: 10px;
-            }
-
-            section {
-                padding: 3rem 1rem;
-            }
-
-            .contact-form {
-            max-width: 300px;
-            width: 100%;
-            margin-right: 25px;
-            /* font-size: 1.1rem; */
-        }
-
-        .contact-form h2 {
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.jpeg">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li class="list-1"><a href="#home">Home</a></li>
-            <li class="list-2"><a href="#about">About</a></li>
-            <li class="list-3"><a href="#skills">Skills</a></li>
-            <li class="list-4"><a href="#contact">Contact</a></li>
+    <!-- goto home icon -->
+    <a href="#"><i class="fa-solid fa-angle-up fa-2xl goto-home"></i></a>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar() class="close-btn"><a href="#" onclick="event.preventDefault()"><img src="./assets/close.svg" alt=""></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="main-nav">
+            <li><a class="nav-brand" href="#">Sharique - Portfolio</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+            <li class="hideOnMobile"><a href="#services">Services</a></li>
+            <li class="hideOnMobile"><a href="#project">Projects</a></li>
+            <li class="hideOnMobile contact"><a href="#contact">Contact</a></li>
+            <li class="menu-btn" onclick=showSidebar()><a href="#" onclick="event.preventDefault()"><img src="./assets/menu.svg" alt=""></a></li>
         </ul>
     </nav>
 
-    <!-- Home Section -->
+    <!-- mouse pointer follower -->
+    <div class="cursor-circle" id="cursorCircle"></div>
+
+    <!-- home -->
     <section id="home">
-        <img src="photo6.jpg" alt="Your Name" class="profile-img">
-        <h1>Md Shariqul Haque</h1>
-        <p>Web Developer | Designer | Frontend Developer | DEO</p>
+        <div class="home-left">
+            <h1 class="hero-heading">Hey, It's Md Shariqul Haque</h1>
+            <h1 class="animated-text">
+                I'm a <span id="typed-text"></span><span class="cursor">|</span>
+            </h1>
+            <div class="social-icons">
+    <a href="https://www.linkedin.com/in/md-sharique-173941265/" class="tooltip-wrapper">
+        <span class="tooltip">LinkedIn</span>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/sharique-WebDev" class="tooltip-wrapper">
+        <span class="tooltip">GitHub</span>
+        <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.facebook.com/md.sharique.18525" class="tooltip-wrapper">
+        <span class="tooltip">Facebook</span>
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/shariq_ue_/" class="tooltip-wrapper">
+        <span class="tooltip">Instagram</span>
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+</div>
+
+            <a href="./assets/final-cv.pdf" download class="downloadcv btn">Download CV</a>
+        </div>
+
+        <div class="home-right">
+            <img src="/assets/image2.jpg" alt="">
+        </div>
     </section>
 
-    <!-- About Section -->
+    <!-- about -->
     <section id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>Hi, I'm <i>Md Shariqul Haque</i>, a dedicated and driven individual passionate about continuous learning and growth. Recently, I completed courses in <i>Web Developement</i>, which have equipped me with valuable skills in developement thinking. Currently I am pursuing <i>BCA from Nalanda College, Biharsharif</i> and to be completing in mid of 2025. In addition to my academic pursuits, I have a strong interest in programming and enjoy creating programs that provides valuable outputs. I'm always excited about new challenges and eager to apply my knowledge to make an impact in the digital world.</p>
+        <h1>
+            <span>About Me</span>
+        </h1>
+        <div class="about-container" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <p>
+                👋 Hi! I'm a highly motivated and recently qualified <strong>BCA graduate</strong> from Nalanda College,
+                Biharsharif, looking to kickstart my career in <strong>web development</strong> 💻. My education
+                includes a
+                <strong>Full Stack Web Development certification</strong> and an ADCA diploma, which
+                have
+                equipped me with a strong skill set in both front-end and back-end technologies.
+
+                🚀 On the front end, I'm experienced with <span>HTML5, CSS, SASS, Bootstrap 5, JavaScript, React
+                    JS</span>
+                and Git — tools I use to build responsive, user-friendly websites. On the back end, I'm comfortable
+                working
+                with <span>Java, PHP, NodeJS, MongoDB and MySQL</span> to develop solid, functional web applications.
+
+                📊 I'm also proficient in data management tools like <strong>Advanced MS Excel</strong> and
+                <strong>TallyPrime 6</strong>. I'm always excited to
+                collaborate and grow within a team-oriented environment 🤝.
+
+                I'm eager to contribute, keep learning, and make a meaningful impact wherever I go 🌱.
+            </p>
+            <div class="circle"></div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
-        <div class="skills-container">
-            <div class="skill-card">
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript</p>
+        <h1>
+            <span>Skills</span>
+        </h1>
+        <div class="skill-icons">
+            <img src="/assets/html.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/css.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/js.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/java.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/bootstrap.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/react.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/php.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/mysql.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/node.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/c.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/c++.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/git.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/github.svg" alt="" data-aos="zoom-in">
+            <img src="/assets/excel.svg" alt="" data-aos="zoom-in">
+        </div>
+    </section>
+
+    <section id="education">
+        <h1>
+            <span>Education</span>
+        </h1>
+        <div class="education-flex">
+            <div class="container" data-aos="fade-right">
+                <ul>
+                    <li>
+                        <b>BCA</b>
+                        <span>2022 - 2025</span>
+                        <p><em>Nalanda College, Biharsharif</em></p>
+                    </li>
+                </ul>
             </div>
-            <div class="skill-card">
-                <h3>Programming</h3>
-                <p>Java, C++, C</p>
+            <div class="container" data-aos="fade-left">
+                <ul>
+                    <li>
+                        <b>I.Sc.</b>
+                        <span>2020 - 2022</span>
+                        <p><em>Allama Iqbal College, Biharsharif</em></p>
+                    </li>
+                </ul>
             </div>
-            <div class="skill-card">
-                <h3>Tools</h3>
-                <p>Git, VS Code, Excel, chatGPT</p>
+            <div class="container" data-aos="fade-right">
+                <ul>
+                    <li>
+                        <b>Matriculation</b>
+                        <span>2020</span>
+                        <p><em>Shantikunj Public School, Jehanabad</em></p>
+                    </li>
+                </ul>
             </div>
-            <div class="skill-card">
-                <h3>Languages</h3>
-                <p>English, Hindi, Urdu</p>
-            </div>
-            <div class="skill-card">
-                <h3>Personalities</h3>
-                <p>Communication, Team work, Responsible</p>
-            </div>
-            <div class="skill-card">
-                <h3>Other skills</h3>
-                <p>Data entry, Designing</p>
+            <div class="container" data-aos="fade-left">
+                <ul>
+                    <li>
+                        <b>Full Stack Web Development</b>
+                        <span>2025 • Certification course</span>
+                        <p><em>R-Tech Computer, Biharsharif</em></p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="services">
+        <h1><span>Services</span></h1>
+        <div class="card-container">
+            <!-- Website Development -->
+            <div class="card" data-aos="fade-left" data-aos-duration="1000">
+                <img src="/assets/coding-img-1.avif" alt="">
+                <div class="card-body">
+    <h3>Single Page Applications</h3>
+    <div class="service-para-wrapper" data-id="1">
+        <span class="service-para"
+            data-full="Deliver seamless user experiences with our SPA development services. We build fast, dynamic, and efficient SPAs using modern JavaScript frameworks like React. Whether it's a dashboard, portfolio, or product site, we ensure smooth performance and easy navigation, all within one page. Stay ahead with scalable, interactive web apps designed for the future.">
+            Deliver seamless user experiences with our SPA development services. We build
+            fast, dynamic, and efficient SPAs using modern JavaScript frameworks like React.
+        </span>
+    </div>
+    <a href="#" onclick="event.preventDefault(); toggleReadMore(1, this)">Read More</a>
+</div>
+
+            </div>
+
+            <!-- Web Apps -->
+            <div class="card web-apps">
+                <img src="/assets/coding-img-4.avif" alt="">
+                <div class="card-body">
+                    <h3>Web Apps</h3>
+                    <div class="service-para-wrapper" data-id="2">
+                        <span class="service-para"
+                            data-full="Build powerful and scalable web applications tailored to your needs. We specialize in developing dynamic, secure, and performance-driven web apps using modern technologies. Whether it's a custom dashboard, a data-driven platform, or an interactive tool, we deliver solutions that are efficient, and ready to grow with your business.">
+                            Build powerful and scalable web applications tailored to your needs. We specialize in
+                            developing
+                            dynamic, secure, and performance-driven web apps using modern technologies.
+                        </span>
+                    </div>
+                    <a href="#" onclick="event.preventDefault(); toggleReadMore(2, this)">Read More</a>
+                </div>
+            </div>
+
+            <!-- Web Design -->
+            <div class="card" data-aos="fade-right" data-aos-duration="1000">
+    <img src="/assets/coding-img-3.avif" alt="">
+    <div class="card-body">
+        <h3>Backend Integration</h3>
+        <div class="service-para-wrapper" data-id="3">
+            <span class="service-para"
+                data-full="Make your website work smoothly with strong backend integration. We connect your website to servers and databases so it can handle user logins, store data, and send or receive information. Whether it's contact forms or user accounts, we make sure everything works safely and correctly behind the scenes. Let us build the engine that powers your website.">
+                Make your website work smoothly with strong backend integration. We connect your website to servers and
+                databases so it can handle user logins, store data, and send or receive information.
+            </span>
+        </div>
+        <a href="#" onclick="event.preventDefault(); toggleReadMore(3, this)">Read More</a>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+    <section id="project">
+        <h1>
+            <span>Projects</span>
+        </h1>
+        <div class="project-flex">
+            <div class="cards" data-aos="flip-left">
+                <div class="clippath">
+                    <a href="https://rock-paper-scissor-gamma-ten.vercel.app/" class="livedemo bg-red">Check out</a>
+                    <div class="img img1"></div>
+                    <a href="https://github.com/sharique-WebDev/Rock-Paper-Scissor.git" class="githubrepo">Github
+                        Repo</a>
+                </div>
+                <div class="project-title">Rock Paper Scissor</div>
+            </div>
+            <div class="cards" data-aos="flip-left">
+                <div class="clippath">
+                    <a href="https://workup-clone.netlify.app/" class="livedemo bg-red">Check out</a>
+                    <div class="img img2"></div>
+                    <a href="https://github.com/sharique-WebDev/workup-clone.git" class="githubrepo">Github Repo</a>
+                </div>
+                <div class="project-title">Workup - Clone</div>
+            </div>
+            <div class="cards" data-aos="flip-left">
+                <div class="clippath">
+                    <a href="https://random-pswrd-generator.vercel.app/" class="livedemo bg-red">Check out</a>
+                    <div class="img img3"></div>
+                    <a href="https://github.com/sharique-WebDev/random-password-generator.git" class="githubrepo">Github
+                        Repo</a>
+                </div>
+                <div class="project-title">Random Password Generator</div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
-        <div class="contact-form">
-            <h2>Contact Me</h2>
-            <i class="fa-brands fa-linkedin fa-xl"></i>
-            <a href="https://www.linkedin.com/in/md-sharique-173941265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Connect on LinkedIn</a><br>
-            <i class="fa-brands fa-square-facebook fa-lg"></i>
-            <a href="https://www.facebook.com/share/1Z6GVCMbuF/">Connect on Facebook</a>
+        <h1>
+            <span>Contact Me</span>
+        </h1>
+        <div class="contact-flex">
+            <form action="https://formsubmit.co/msharique006@gmail.com" method="POST" data-aos="zoom-in">
+                <input type="text" name="name" id="name" placeholder="Enter name:" required>
+                <input type="email" name="email" id="email" placeholder="Enter your email:" required>
+                <input type="text" name="subject" required placeholder="Enter subject:" id="">
+                <textarea name="message" id="message" placeholder="Enter message:" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit">Submit</button>
+            </form>
+            <iframe data-aos="zoom-in" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57760.3409404793!2d85.48134087157578!3d25.202503881878435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2f35c30f6cd23%3A0x4a668b37898fef59!2sBihar%20Sharif%2C%20Bihar!5e0!3m2!1sen!2sin!4v1748434957751!5m2!1sen!2sin" width="400" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+    <footer>
+        <p>&copy; 2025 Sharique - Portfolio | All rights reserved.</p>
+    </footer>
 
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will respond soon.');
-            this.reset();
-        });
-
-        // Navigation active state on scroll
-        window.addEventListener('scroll', function() {
-            let sections = document.querySelectorAll('section');
-            let navLinks = document.querySelectorAll('.nav-links a');
-            
-            sections.forEach(sec => {
-                let top = window.scrollY;
-                let offset = sec.offsetTop - 150;
-                let height = sec.offsetHeight;
-                let id = sec.getAttribute('id');
-
-                if(top >= offset && top < offset + height) {
-                    navLinks.forEach(links => {
-                        links.classList.remove('active');
-                        document.querySelector('.nav-links a[href*=' + id + ']').classList.add('active');
-                    });
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
