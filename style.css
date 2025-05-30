@@ -13,7 +13,7 @@ body {
 }
 
 :root {
-    --text-red-material: #E34234;
+    --text-red-material: #C0392B;
     --text-white: white;
     --text-black: black;
 }
@@ -21,7 +21,7 @@ body {
 body {
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #010304, #162f36, #234755);
+    background: linear-gradient(135deg, #021c1e, #053742, #1f4287);
     background-size: 600% 600%;
     animation: bodycolor 10s ease infinite;
 }
@@ -308,7 +308,7 @@ nav li:first-child a:hover {
     border-radius: 50%;
     filter: brightness(0.8);
     object-fit: cover;
-    box-shadow: 0 0 10px var(--text-white);
+    box-shadow: 0 0 15px var(--text-white);
 }
 
 #home .hero-heading {

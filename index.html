@@ -26,7 +26,8 @@
 
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar() class="close-btn"><a href="#" onclick="event.preventDefault()"><img src="./assets/close.svg" alt=""></a></li>
+            <li onclick=hideSidebar() class="close-btn"><a href="#" onclick="event.preventDefault()"><img
+                        src="./assets/close.svg" alt=""></a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -42,7 +43,8 @@
             <li class="hideOnMobile"><a href="#services">Services</a></li>
             <li class="hideOnMobile"><a href="#project">Projects</a></li>
             <li class="hideOnMobile contact"><a href="#contact">Contact</a></li>
-            <li class="menu-btn" onclick=showSidebar()><a href="#" onclick="event.preventDefault()"><img src="./assets/menu.svg" alt=""></a></li>
+            <li class="menu-btn" onclick=showSidebar()><a href="#" onclick="event.preventDefault()"><img
+                        src="./assets/menu.svg" alt=""></a></li>
         </ul>
     </nav>
 
@@ -57,29 +59,33 @@
                 I'm a <span id="typed-text"></span><span class="cursor">|</span>
             </h1>
             <div class="social-icons">
-    <a href="https://www.linkedin.com/in/md-sharique-173941265/" class="tooltip-wrapper">
-        <span class="tooltip">LinkedIn</span>
-        <i class="fa-brands fa-linkedin-in"></i>
-    </a>
-    <a href="https://github.com/sharique-WebDev" class="tooltip-wrapper">
-        <span class="tooltip">GitHub</span>
-        <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="https://www.facebook.com/md.sharique.18525" class="tooltip-wrapper">
-        <span class="tooltip">Facebook</span>
-        <i class="fa-brands fa-facebook-f"></i>
-    </a>
-    <a href="https://www.instagram.com/shariq_ue_/" class="tooltip-wrapper">
-        <span class="tooltip">Instagram</span>
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-</div>
+                <a href="https://www.linkedin.com/in/md-sharique-173941265/" target="_blank" rel="noopener noreferrer"
+                    class="tooltip-wrapper">
+                    <span class="tooltip">LinkedIn</span>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/sharique-WebDev" target="_blank" rel="noopener noreferrer"
+                    class="tooltip-wrapper">
+                    <span class="tooltip">GitHub</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/md.sharique.18525" target="_blank" rel="noopener noreferrer"
+                    class="tooltip-wrapper">
+                    <span class="tooltip">Facebook</span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/shariq_ue_/" target="_blank" rel="noopener noreferrer"
+                    class="tooltip-wrapper">
+                    <span class="tooltip">Instagram</span>
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
 
             <a href="./assets/final-cv.pdf" download class="downloadcv btn">Download CV</a>
         </div>
 
         <div class="home-right">
-            <img src="/assets/image2.jpg" alt="">
+            <img src="/assets/image2.jpg" alt="my-img">
         </div>
     </section>
 
@@ -182,21 +188,21 @@
     <section id="services">
         <h1><span>Services</span></h1>
         <div class="card-container">
+
             <!-- Website Development -->
             <div class="card" data-aos="fade-left" data-aos-duration="1000">
                 <img src="/assets/coding-img-1.avif" alt="">
                 <div class="card-body">
-    <h3>Single Page Applications</h3>
-    <div class="service-para-wrapper" data-id="1">
-        <span class="service-para"
-            data-full="Deliver seamless user experiences with our SPA development services. We build fast, dynamic, and efficient SPAs using modern JavaScript frameworks like React. Whether it's a dashboard, portfolio, or product site, we ensure smooth performance and easy navigation, all within one page. Stay ahead with scalable, interactive web apps designed for the future.">
-            Deliver seamless user experiences with our SPA development services. We build
-            fast, dynamic, and efficient SPAs using modern JavaScript frameworks like React.
-        </span>
-    </div>
-    <a href="#" onclick="event.preventDefault(); toggleReadMore(1, this)">Read More</a>
-</div>
-
+                    <h3>Single Page Applications</h3>
+                    <div class="service-para-wrapper" data-id="1">
+                        <span class="service-para"
+                            data-full="Deliver seamless user experiences with our SPA development services. We build fast, dynamic, and efficient SPAs using modern JavaScript frameworks like React. Whether it's a dashboard, portfolio, or product site, we ensure smooth performance and easy navigation, all within one page. Stay ahead with scalable, interactive web apps designed for the future.">
+                            Deliver seamless user experiences with our SPA development services. We build
+                            fast, dynamic, and efficient SPAs using modern JavaScript frameworks like React.
+                        </span>
+                    </div>
+                    <a href="#" onclick="event.preventDefault(); toggleReadMore(1, this)">Read More</a>
+                </div>
             </div>
 
             <!-- Web Apps -->
@@ -218,19 +224,20 @@
 
             <!-- Web Design -->
             <div class="card" data-aos="fade-right" data-aos-duration="1000">
-    <img src="/assets/coding-img-3.avif" alt="">
-    <div class="card-body">
-        <h3>Backend Integration</h3>
-        <div class="service-para-wrapper" data-id="3">
-            <span class="service-para"
-                data-full="Make your website work smoothly with strong backend integration. We connect your website to servers and databases so it can handle user logins, store data, and send or receive information. Whether it's contact forms or user accounts, we make sure everything works safely and correctly behind the scenes. Let us build the engine that powers your website.">
-                Make your website work smoothly with strong backend integration. We connect your website to servers and
-                databases so it can handle user logins, store data, and send or receive information.
-            </span>
-        </div>
-        <a href="#" onclick="event.preventDefault(); toggleReadMore(3, this)">Read More</a>
-    </div>
-</div>
+                <img src="/assets/coding-img-3.avif" alt="">
+                <div class="card-body">
+                    <h3>Backend Integration</h3>
+                    <div class="service-para-wrapper" data-id="3">
+                        <span class="service-para"
+                            data-full="Make your website work smoothly with strong backend integration. We connect your website to servers and databases so it can handle user logins, store data, and send or receive information. Whether it's contact forms or user accounts, we make sure everything works safely and correctly behind the scenes. Let us build the engine that powers your website.">
+                            Make your website work smoothly with strong backend integration. We connect your website to
+                            servers and
+                            databases so it can handle user logins, store data, and send or receive information.
+                        </span>
+                    </div>
+                    <a href="#" onclick="event.preventDefault(); toggleReadMore(3, this)">Read More</a>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -242,26 +249,26 @@
         <div class="project-flex">
             <div class="cards" data-aos="flip-left">
                 <div class="clippath">
-                    <a href="https://rock-paper-scissor-gamma-ten.vercel.app/" class="livedemo bg-red">Check out</a>
+                    <a href="https://rock-paper-scissor-gamma-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="livedemo bg-red">Check out</a>
                     <div class="img img1"></div>
-                    <a href="https://github.com/sharique-WebDev/Rock-Paper-Scissor.git" class="githubrepo">Github
+                    <a href="https://github.com/sharique-WebDev/Rock-Paper-Scissor.git" target="_blank" rel="noopener noreferrer" class="githubrepo">Github
                         Repo</a>
                 </div>
                 <div class="project-title">Rock Paper Scissor</div>
             </div>
             <div class="cards" data-aos="flip-left">
                 <div class="clippath">
-                    <a href="https://workup-clone.netlify.app/" class="livedemo bg-red">Check out</a>
+                    <a href="https://workup-clone.netlify.app/" target="_blank" rel="noopener noreferrer" class="livedemo bg-red">Check out</a>
                     <div class="img img2"></div>
-                    <a href="https://github.com/sharique-WebDev/workup-clone.git" class="githubrepo">Github Repo</a>
+                    <a href="https://github.com/sharique-WebDev/workup-clone.git" target="_blank" rel="noopener noreferrer" class="githubrepo">Github Repo</a>
                 </div>
                 <div class="project-title">Workup - Clone</div>
             </div>
             <div class="cards" data-aos="flip-left">
                 <div class="clippath">
-                    <a href="https://random-pswrd-generator.vercel.app/" class="livedemo bg-red">Check out</a>
+                    <a href="https://random-pswrd-generator.vercel.app/" target="_blank" rel="noopener noreferrer" class="livedemo bg-red">Check out</a>
                     <div class="img img3"></div>
-                    <a href="https://github.com/sharique-WebDev/random-password-generator.git" class="githubrepo">Github
+                    <a href="https://github.com/sharique-WebDev/random-password-generator.git" target="_blank" rel="noopener noreferrer" class="githubrepo">Github
                         Repo</a>
                 </div>
                 <div class="project-title">Random Password Generator</div>
