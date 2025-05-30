@@ -3,7 +3,7 @@ console.log("Hello World!");
 let gotoEl = document.querySelector(".goto-home")
 
 window.addEventListener("scroll", () =>{
-    if(window.scrollY > 400){
+    if(window.scrollY > 500){
         gotoEl.style.opacity = "1"
         gotoEl.style.visibility = "visible"
     } else {

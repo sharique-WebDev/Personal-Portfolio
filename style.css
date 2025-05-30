@@ -287,7 +287,8 @@ nav li:first-child a:hover {
 }
 
 .home-left {
-    flex: 1; /* Take remaining space */
+    flex: 1;
+    /* Take remaining space */
 }
 
 .home-left>*:not(.social-icons) {
@@ -295,7 +296,8 @@ nav li:first-child a:hover {
 }
 
 .home-right {
-    flex: 0 0 auto; /* Don't grow or shrink */
+    flex: 0 0 auto;
+    /* Don't grow or shrink */
     max-width: 250px;
 }
 
@@ -345,7 +347,8 @@ nav li:first-child a:hover {
 }
 
 .btn:hover::before {
-    width: 100%; /* Expands from left to right */
+    width: 100%;
+    /* Expands from left to right */
 }
 
 .btn:hover {
@@ -382,10 +385,10 @@ section h1:not(.hero-heading):first-child span {
 
 .about-container {
     background-color: rgba(0, 0, 0, 0.219);
-    padding: min(2.3em, 7%);
+    padding: min(2.2em, 6%);
     border-radius: 10px;
     letter-spacing: 1px;
-    line-height: 27px;
+    line-height: 26px;
     overflow-x: hidden;
     word-wrap: break-word;
     word-break: break-word;
@@ -434,6 +437,10 @@ section h1:not(.hero-heading):first-child span {
 
 #education .container span {
     color: var(--text-red-material);
+}
+
+#education .container span, #education .container p{
+    font-size: clamp(0.9rem, 1.3vw, 1rem);
 }
 
 #education ul li {
@@ -625,6 +632,14 @@ textarea {
     overflow: hidden;
 }
 
+.contact-flex .contact-img {
+    background: url(assets/flat-design-illustration-customer-support.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
 #contact form button {
     width: 120px;
     cursor: pointer;
@@ -667,8 +682,7 @@ footer {
     }
 
     .home-right {
-        order: -1;
-        /* Move image to top */
+        order: -1; /* Move image to top */
         max-width: none;
     }
 
@@ -676,7 +690,7 @@ footer {
         width: 100%;
     }
 
-    .home-right img{
+    .home-right img {
         width: 250px;
         height: 250px;
     }
@@ -701,7 +715,6 @@ footer {
 
     #services .card-container .card {
         flex: 1 1 45%;
-        transform: none;
     }
 
     #project .project-flex>* {
@@ -736,25 +749,15 @@ footer {
         margin: auto;
     }
 
-    .home-right img {
-        object-fit: cover;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-    }
-
     section {
         max-width: 88%;
         margin: 10% auto;
     }
 
     .about-container {
-        letter-spacing: 0;
-        line-height: 20px;
-        font-size: 14px;
-        font-size: 14px;
-        line-height: 20px;
-        overflow-x: hidden;
+        letter-spacing: 0.5px;
+        line-height: 22px;
+        font-size: 13px;
     }
 
     .skill-icons img {
@@ -767,7 +770,6 @@ footer {
 
     #services .card-container .card {
         flex: 1 1 100%;
-        transform: none;
     }
 
     #project .project-flex>* {
@@ -784,5 +786,9 @@ footer {
 
     .education-flex {
         gap: 20px;
+    }
+
+    #contact .contact-flex {
+        gap: 0;
     }
 }
