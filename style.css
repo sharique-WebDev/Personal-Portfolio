@@ -13,7 +13,7 @@ body {
 }
 
 :root {
-    --text-red-material: #C0392B;
+    --text-red-material:#a9952f;
     --text-white: white;
     --text-black: black;
 }
@@ -21,23 +21,7 @@ body {
 body {
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #021c1e, #053742, #1f4287);
-    background-size: 600% 600%;
-    animation: bodycolor 10s ease infinite;
-}
-
-@keyframes bodycolor {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    background-color: #1d3557;
 }
 
 section {
@@ -325,7 +309,7 @@ nav li:first-child a:hover {
     padding: min(0.8em, 4%);
     font-size: 17px;
     font-weight: bold;
-    border: 2px solid var(--text-red-material);
+    border: 2.5px solid var(--text-red-material);
     border-radius: 10px;
     background: none;
     color: var(--text-red-material);
